@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Financiar</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="add_description">Add description</string>
+    <string name="enter_activity_name">Enter activity name</string>
+    <string name="enter_money_added_spent">Enter money added/spent</string>
+    <string name="ok_text">SAVE</string>
+    <string name="activities">ACTIVITIES</string>
+    <string name="budgets">BUDGETS</string>
+    <string name="add">Add</string>
+    <string name="display_budget_added_money">Added Money:</string>
+    <string name="display_budget_current_money">Current Money:</string>
+    <string name="display_budget_date_created">Date Created:</string>
+    <string name="display_budget_date_modified">Date Modified:</string>
+    <string name="display_budget_description">Description:</string>
+    <string name="display_budget_name">Budget Name</string>
+    <string name="display_budget_original_money">Original Money:</string>
+    <string name="display_budget_search_activities">Search</string>
+    <string name="display_budget_spent_money">Spent Money:</string>
+    <string name="display_budget_update">Update</string>
+    <string name="display_budget_updatedesc">Update the budget</string>
+    <string name="budget_add_description_hint">Add description</string>
+    <string name="display_budget_add_activity">Add</string>
+    <string name="custom_budget_name">Budget Name</string>
+    <string name="custom_current_percent">Percent</string>
+    <string name="display_budget_add_description">Add description</string>
+    <string name="enter_budget_name">Enter budget name</string>
+    <string name="enter_original_money">Enter original money</string>
+    <string name="add_a_budget_item">Add a budget item</string>
+    <string name="total_current_money">Current Money:</string>
+    <string name="total_added_money">Total Added Money:</string>
+    <string name="total_money_spent">Total Money Spent:</string>
+    <string name="total_original_money">Total Original Money:</string>
+    <string name="main_menu_add">add</string>
+    <string name="main_menu_search">search</string>
+    <string name="date">date</string>
+</resources>

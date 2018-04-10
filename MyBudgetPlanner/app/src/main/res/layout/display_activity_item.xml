@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/displayActivityUpdateButton"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/holo_orange_dark"
+        android:contentDescription="Update budget"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="activityRespondToUpdate"
+        android:text="Update" />
+
+    <EditText
+        android:id="@+id/editActivityDescription"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/displayActivityDescription"
+        android:layout_alignStart="@+id/displayActivityDescription"
+        android:layout_below="@+id/displayActivityDescription"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/displayActivityName"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="10dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/displayActivityDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/displayActivityName"
+        android:fontFamily="casual"
+        android:gravity="start"
+        android:text="Date"
+        android:textAlignment="textEnd"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/displayActivityMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/displayActivityDate"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="casual"
+        android:text="Money Involved:  "
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/displayActivityDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editActivityMoney"
+        android:layout_alignStart="@+id/editActivityMoney"
+        android:layout_below="@+id/editActivityMoney"
+        android:layout_marginTop="11dp"
+        android:fontFamily="casual"
+        android:text="Description:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editActivityMoney"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/displayActivityMoney"
+        android:layout_alignStart="@+id/displayActivityMoney"
+        android:layout_below="@+id/displayActivityMoney"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium" />
+
+</RelativeLayout>

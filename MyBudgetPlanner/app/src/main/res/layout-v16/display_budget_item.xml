@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/displayBudgetDateModified"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/displayBudgetName"
+        android:layout_toEndOf="@+id/displayBudgetDateCreated"
+        android:layout_toRightOf="@+id/displayBudgetDateCreated"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:text="@string/display_budget_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayBudgetName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/displayBudgetOrigMoney"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText4"
+        android:layout_toEndOf="@+id/displayBudgetDateModified"
+        android:layout_toRightOf="@+id/displayBudgetDateModified"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/displayBudgetOrigMoney"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText5"
+        android:layout_toEndOf="@+id/displayBudgetOrigMoney"
+        android:layout_toRightOf="@+id/displayBudgetOrigMoney"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/displayBudgetCurrentMoney"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText6"
+        android:layout_toEndOf="@+id/displayBudgetOrigMoney"
+        android:layout_toRightOf="@+id/displayBudgetOrigMoney"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/displayBudgetAddedMoney"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText7"
+        android:layout_toEndOf="@+id/displayBudgetAddedMoney"
+        android:layout_toRightOf="@+id/displayBudgetAddedMoney"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/displayBudgetMoneySpent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText8"
+        android:layout_toEndOf="@+id/displayBudgetMoneySpent"
+        android:layout_toRightOf="@+id/displayBudgetMoneySpent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/displayBudgetDescription"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editText9"
+        android:layout_toEndOf="@+id/displayBudgetDescription"
+        android:layout_toRightOf="@+id/displayBudgetDescription"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:text="@string/activities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayBudgetActivitiesLabel"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/displayBudgetUpdate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+
+    <TextView
+        android:id="@+id/displayBudgetDateCreated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/displayBudgetActivitiesLabel"
+        android:layout_alignStart="@+id/displayBudgetActivitiesLabel"
+        android:layout_below="@+id/displayBudgetName"
+        android:fontFamily="casual"
+        android:text="@string/display_budget_date_created"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/displayBudgetDateModified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/displayBudgetDateCreated"
+        android:layout_alignStart="@+id/displayBudgetDateCreated"
+        android:layout_below="@+id/displayBudgetDateCreated"
+        android:fontFamily="casual"
+        android:text="@string/display_budget_date_modified"
+        android:textSize="14sp" />
+
+    <TextView
+        android:text="@string/display_budget_original_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayBudgetOrigMoney"
+        android:layout_weight="0.05"
+        android:fontFamily="casual"
+        android:textSize="14sp"
+        android:layout_below="@+id/displayBudgetDateModified"
+        android:layout_alignLeft="@+id/displayBudgetDateModified"
+        android:layout_alignStart="@+id/displayBudgetDateModified"
+        tools:ignore="ObsoleteLayoutParam" />
+
+    <TextView
+        android:id="@+id/displayBudgetAddedMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/displayBudgetCurrentMoney"
+        android:layout_alignStart="@+id/displayBudgetCurrentMoney"
+        android:layout_below="@+id/displayBudgetCurrentMoney"
+        android:fontFamily="casual"
+        android:text="@string/display_budget_added_money" />
+
+    <TextView
+        android:text="@string/display_budget_spent_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayBudgetMoneySpent"
+        android:layout_below="@+id/editText8"
+        android:layout_alignLeft="@+id/displayBudgetAddedMoney"
+        android:layout_alignStart="@+id/displayBudgetAddedMoney"
+        android:fontFamily="casual" />
+
+    <TextView
+        android:id="@+id/displayBudgetDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/displayBudgetMoneySpent"
+        android:layout_alignStart="@+id/displayBudgetMoneySpent"
+        android:layout_below="@+id/editText9"
+        android:fontFamily="casual"
+        android:text="@string/display_budget_description"
+        android:textSize="14sp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/displayBudgetActivitiesLabel"
+        android:id="@+id/displayBudgetListView"
+        android:layout_alignLeft="@+id/displayBudgetActivitiesLabel"
+        android:layout_alignStart="@+id/displayBudgetActivitiesLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayBudgetSearch"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_below="@+id/editText10"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/display_budget_search_activities"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:text="@string/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayBudgetAdd"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_alignBaseline="@+id/displayBudgetSearch"
+        android:layout_alignBottom="@+id/displayBudgetSearch"
+        android:layout_toLeftOf="@+id/displayBudgetSearch"
+        android:layout_toStartOf="@+id/displayBudgetSearch"
+        android:contentDescription="@string/display_budget_add_activity" />
+
+    <Button
+        android:text="@string/display_budget_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayBudgetUpdate"
+        android:fontFamily="sans-serif-medium"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_alignBaseline="@+id/displayBudgetAdd"
+        android:layout_alignBottom="@+id/displayBudgetAdd"
+        android:layout_toLeftOf="@+id/displayBudgetAdd"
+        android:layout_toStartOf="@+id/displayBudgetAdd"
+        android:contentDescription="@string/display_budget_updatedesc" />
+
+    <TextView
+        android:id="@+id/displayBudgetCurrentMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/displayBudgetOrigMoney"
+        android:layout_alignStart="@+id/displayBudgetOrigMoney"
+        android:layout_below="@+id/displayBudgetOrigMoney"
+        android:fontFamily="casual"
+        android:text="@string/display_budget_current_money"
+        android:textSize="14sp" />
+
+</RelativeLayout>

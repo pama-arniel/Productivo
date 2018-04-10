@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/unit_background"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btnEdit"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="Update budget"
+            android:src="@drawable/edit"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <ImageView
+            android:id="@+id/btnDelete"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:contentDescription="Delete budget"
+            android:src="@drawable/delete"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/budgetTxtDate"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:gravity="top|center_horizontal"
+            android:text="@string/date"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            tools:ignore="RtlHardcoded"
+            android:layout_toLeftOf="@+id/btnDelete"
+            android:layout_toRightOf="@+id/btnEdit"
+            android:layout_toEndOf="@+id/btnEdit" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/budgetNameDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.33"
+        android:text="Medium Text"
+        android:textAlignment="textStart"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/currentPercent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:gravity="start"
+        android:text="Remaining: "
+        android:textAlignment="textStart"
+        android:textColor="@android:color/black" />
+</LinearLayout>
